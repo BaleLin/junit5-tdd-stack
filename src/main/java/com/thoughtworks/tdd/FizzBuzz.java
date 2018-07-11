@@ -2,10 +2,6 @@ package com.thoughtworks.tdd;
 
 import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
-/**
- * @author Dylan Wei
- * @date 2018-07-11 10:58
- */
 public class FizzBuzz {
 
     public String sayNumber(int number) {
