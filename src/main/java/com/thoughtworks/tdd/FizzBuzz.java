@@ -12,7 +12,6 @@ public class FizzBuzz {
          String str ="";
         String str_a = String.valueOf(number);
         if(str_a .indexOf('3')!=-1){
-            System.out.print(str_a .indexOf("3"));
            return "Fizz";
         }
         if(number%3==0){
