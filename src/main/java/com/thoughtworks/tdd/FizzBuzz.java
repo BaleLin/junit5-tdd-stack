@@ -9,16 +9,26 @@ import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 public class FizzBuzz {
 
     public String sayNumber(int number) {
-        StringBuffer stringBuffer = new StringBuffer();
+         String str ="";
+        String str_a = String.valueOf(number);
+        if(str_a .indexOf('3')!=-1){
+            System.out.print(str_a .indexOf("3"));
+           return "Fizz";
+        }
         if(number%3==0){
-            stringBuffer.append("Fizz");
+            str+="Fizz";
+
         }
-        if(number%5==0){
-            stringBuffer.append("Buzz");
+         if(number%5==0){
+            str+="Buzz";
+
         }
-        if(number%7==0){
-            stringBuffer.append("Whizz");
+         if(number%7==0){
+            str+="Whizz";
+
         }
-        return stringBuffer.length()==0?number + "":stringBuffer.toString();
+
+
+        return str==""?number + "":str;
     }
 }
